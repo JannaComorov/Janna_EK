@@ -16,21 +16,15 @@ public class Main {
         tasksList.add("To prepare the contracts and sign them");
 
 
-        System.out.println(tasksList.get(0));
-        System.out.println(tasksList.get(1));
-        System.out.println(tasksList.get(2));
-        System.out.println(tasksList.get(3));
-        System.out.println(tasksList.get(4));
-        System.out.println(tasksList.get(5));
-        System.out.println(tasksList.get(6));
-        System.out.println(tasksList.get(7));
-        System.out.println(tasksList.get(8));
-
+        System.out.println("All tasks:");
+        for (int i = 0; i < tasksList.size(); i++) {
+            System.out.println(tasksList.get(i));
+        }
         System.out.println("_____________________________");
 
         Set<String> uniqueTasks = new HashSet<>(tasksList);
 
-        // Afișarea task-urilor unice
+
         System.out.println("Unique tasks:");
         for (String task : uniqueTasks) {
             System.out.println(task);
